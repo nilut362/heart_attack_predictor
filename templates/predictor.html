@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predictor</title>
+    <link rel="stylesheet" href="/static/predictor.css">
+</head>
+<body>
+    <header>
+        <h1>Heart Attack Predictor !</h1>
+    </header> 
+
+    <nav>
+        <a href="home" target="_blank">Home Page</a>
+        <a href="about" target="_blank">About The Project</a>
+    </nav>
+    <article>
+        <form action="result" method="POST">
+
+            <table align="center" cellspacing = '10'>
+                <tr><td>
+                <label for="age">Age</label></td>
+                <td><input type="number" name="age"></td></tr>
+                
+                <tr><td>
+                <label for="sex">Sex</label></td>
+                <td><input type="number" name="sex"></td></tr>
+                  
+                <tr><td>
+                <label for="cp">Cp</label></td>
+                <td><input type="number" name="cp"></td></tr>
+                
+                <tr><td>    
+                <label for="trestbps">TrestBPS</label></td>
+                <td><input type="number" name="trestbps"></td></tr>
+                
+                <tr><td>
+                <label for="chol">Cholesterol</label></td>
+                <td><input type="number" name="chol"></td></tr>
+                
+                <tr><td>    
+                <label for="fbs">FBS</label></td>
+                <td><input type="number" name="fbs"></td></tr>
+                
+                <tr><td>    
+                <label for="restecg">RestECG</label></td>
+                <td><input type="number" name="restecg"></td></tr>
+                
+                <tr><td>
+                <label for="thalach">Thalach</label></td>
+                <td><input type="number" name="thalach"></td></tr>
+                
+                <tr><td>
+                <label for="exang">Exang</label></td>
+                <td><input type="number" name="exang"></td></tr>
+                
+                <tr><td>   
+                <label for="oldpeak">Oldpeak</label></td>
+                <td><input type="number" name="oldpeak"></td></tr>
+                
+                <tr><td>   
+                <label for="slope">Slope</label></td>
+                <td><input type="number" name="slope"></td></tr>
+                
+                <tr><td>
+                <label for="ca">CA</label></td>
+                <td><input type="number" name="ca"></td></tr>
+                
+                <tr><td>   
+                <label for="thal">Thal</label></td>
+                <td><input type="number" name="thal"></td></tr>
+                
+                <tr><td align="center" colspan="2">
+                <input class="submit" type="submit" value="Predict"></td></tr>
+            </table>
+        </form>
+    </article>
+    
+</body>
+</html>

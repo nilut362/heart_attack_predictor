@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <link rel="stylesheet" href="/static/result.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Heart Attack Predictor !</h1>
+        </header> 
+
+        <nav>
+            <a href="home" target="_blank">Home Page</a>
+            <a href="predictor" target="_blank">Predictor</a>
+            <a href="about" target="_blank">About The Project</a>
+        </nav>
+        
+        <article>
+            <h2>Result !</h2>
+            {% if data['prediction']==1 %}
+                <p>The chances of the person of getting an heart attack is positive.</p>
+            {% elif data['prediction']==0 %}
+                <p>The chances of the person of getting an heart attack is negative.</p>
+            {% endif %}
+        </article>
+
+        <footer>
+            <p>Created by <a href="#" target="_blank">Nilotpal Malakar</a></p>
+        </footer>
+    </div>
+</body>
+</html>
+
+
+<body>
+
+</body>
+</html>
